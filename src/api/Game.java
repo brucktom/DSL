@@ -9,12 +9,11 @@ public interface Game {
 
     public static void main(String[] args) {
         Game g = Game.create().
-                player("jan")
-                .player(name("jan"))
-                .player(name("jana"), level(3))
-                .player(name("lara"), age(22), level(2))
-                .asMaster()
-                .setInSpace();
+                player(name("Brent"), age(27),level(3))
+                .setOnEarth()
+                .player(name("Mary")).asMaster()
+                .player("Susie")
+                .get();
 
     }
 }

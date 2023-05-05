@@ -1,10 +1,10 @@
 package api;
 
-public interface IF3 {
+public interface IF3 extends IF6{
 
-    Game setInSpace();
+    IF6 setInSpace();
 
-    Game setOnEarth();
+    IF6 setOnEarth();
 
-    Game setUnderwater();
+    IF6 setUnderwater();
 }
